@@ -1,23 +1,23 @@
-
 import { useState } from "react";
 import { FaMeta } from "react-icons/fa6"; 
 import { FaGlasses } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 export default function OkelayMeta() {
   const products = [
     {
       id: 1,
       name: "Okelay Meta Wayfarer (Clear)",
       description: "Classic Wayfarer smart glasses, clear lens.",
-      img: "https://scontent.flhe2-4.fna.fbcdn.net/v/t39.8562-6/482030673_1266444904449810_2871134102746664192_n.webp?_nc_cat=110&ccb=1-7&_nc_sid=9a942e&_nc_ohc=XhrXhlkZtaQQ7kNvwFYH0GW&_nc_oc=AdkH4cWhfymsQuk8z6-Z8aOkzRZSohr3H0vqk-7Jwi3jnJQ0oPPB32NOtmguRwRZbT4&_nc_zt=14&_nc_ht=scontent.flhe2-4.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfVbFcmfCI3yVtc9NJX6wOqTAWgGmTzhMQWvUqw365EpJA&oe=68ACFC36"
+      img: "https://scontent.flhe2-4.fna.fbcdn.net/v/t39.8562-6/482030673_1266444904449810_2871134102746664192_n.webp?_nc_cat=110&ccb=1-7&_nc_sid=9a942e&_nc_ohc=XhrXhlkZtaQQ7kNvwFYH0GW&_nc_oc=AdkH4cWhfymsQuk8z6-Z8aOkzRZSohr3H0vqk-7Jwi3jnJQ0oPPB32NOtmguRwRZbT4&_nc_zt=14&_nc_ht=scontent.flhe2-4.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfVbFcmfCI3yVtc9NJX6wOqTAWgGmTzhMQWvUqw365EpJA&oe=68ACFC36",
     },
     {
       id: 2,
       name: "Okelay Meta Sunglasses Style",
       description: "Smart sunglasses with bold frame.",
-      img: "https://scontent.flhe2-3.fna.fbcdn.net/v/t39.8562-6/513249934_1469637687532595_5182399917028624858_n.webp?_nc_cat=107&ccb=1-7&_nc_sid=9a942e&_nc_ohc=VYB-NLhDgTAQ7kNvwHhmEsT&_nc_oc=Adn2vwdmXNrtQde4vBFsM0BLbPOH9vE1Zua6Qn7UA7JGq3PdR5yRpO2xH9hvsqmwI-U&_nc_zt=14&_nc_ht=scontent.flhe2-3.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfVQRkM5Gu8fpqlBZuMpEGJy17EoZ07f1pJ63slHUOWutA&oe=68AD20E3"
+      img: "https://scontent.flhe2-3.fna.fbcdn.net/v/t39.8562-6/513249934_1469637687532595_5182399917028624858_n.webp?_nc_cat=107&ccb=1-7&_nc_sid=9a942e&_nc_ohc=VYB-NLhDgTAQ7kNvwHhmEsT&_nc_oc=Adn2vwdmXNrtQde4vBFsM0BLbPOH9vE1Zua6Qn7UA7JGq3PdR5yRpO2xH9hvsqmwI-U&_nc_zt=14&_nc_ht=scontent.flhe2-3.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfVQRkM5Gu8fpqlBZuMpEGJy17EoZ07f1pJ63slHUOWutA&oe=68AD20E3",
     },
-    {
+     {
       id: 3,
       name: "Okelay Meta in Action",
       description: "Lifestyle view wearing smart glasses.",
@@ -49,32 +49,36 @@ export default function OkelayMeta() {
       description: "Meta special Okelay",
       img: "https://scontent.flhe2-2.fna.fbcdn.net/v/t39.8562-6/482031480_2764432320394081_7420328633235150300_n.webp?_nc_cat=101&ccb=1-7&_nc_sid=9a942e&_nc_ohc=Sa75rQVzHikQ7kNvwFh-g7w&_nc_oc=Adn5KbQeKyRMW0Gt-iSmT8HQ8hJzoRJtRTDlJTIBSnFZIppu4UkKE-Deg9MMeQSmUec&_nc_zt=14&_nc_ht=scontent.flhe2-2.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfXZSnLI8pGW9IFZ3vG7XtJaHtAOQ4kuSPpOpC5kuhcgzw&oe=68ACF1BA"
     }
+
   ];
 
   const [selected, setSelected] = useState(null);
 
   return (
     <>
-      <section className="">
-       <div className="py-[100px] bg-gray-100 pb-[200px]">
-  <div className="flex justify-center gap-32">
-    <div className="flex flex-col items-center transform transition-transform duration-500 hover:scale-110 hover:-translate-y-2">
-      <FaMeta className="text-[120px] text-blue-600 drop-shadow-lg" />
-      <p className="mt-6 text-3xl font-extrabold tracking-wide text-gray-800">Meta</p>
-    </div>
+      {/* HERO SECTION */}
+      <section className="bg-gray-100 py-20 sm:py-24">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-12 sm:gap-32">
+          <div className="flex flex-col items-center transform transition-transform duration-500 hover:scale-110 hover:-translate-y-2">
+            <FaMeta className="text-[80px] sm:text-[120px] text-blue-600 drop-shadow-lg" />
+            <p className="mt-6 text-2xl sm:text-3xl font-extrabold tracking-wide text-gray-800">Meta</p>
+          </div>
 
-    <div className="flex flex-col items-center transform transition-transform duration-500 hover:scale-110 hover:-translate-y-2">
-      <FaGlasses className="text-[120px] text-black drop-shadow-lg" />
-      <p className="mt-6 text-3xl font-extrabold tracking-wide text-gray-800">Oakley</p>
-    </div>
-  </div>
-</div>
+          <div className="flex flex-col items-center transform transition-transform duration-500 hover:scale-110 hover:-translate-y-2">
+            <FaGlasses className="text-[80px] sm:text-[120px] text-black drop-shadow-lg" />
+            <p className="mt-6 text-2xl sm:text-3xl font-extrabold tracking-wide text-gray-800">Oakley</p>
+          </div>
+        </div>
+      </section>
 
-
-           
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-[100px]">
-          {products.map((p) => (
-            <div key={p.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+      {/* PRODUCT GRID */}
+      <section className="py-16 sm:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+          {products.map((p, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105"
+            >
               <img src={p.img} alt={p.name} className="w-full h-48 object-cover" />
               <div className="p-4 text-center">
                 <h2 className="text-lg font-semibold">{p.name}</h2>
@@ -91,8 +95,9 @@ export default function OkelayMeta() {
         </div>
       </section>
 
+      {/* MODAL */}
       {selected && (
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl p-6 max-w-xl w-full relative">
             <button
               onClick={() => setSelected(null)}
@@ -109,27 +114,31 @@ export default function OkelayMeta() {
           </div>
         </div>
       )}
-      <section className="py-16 bg-gray-50">
-  <div className="max-w-3xl mx-auto px-6 text-center">
-    <h2 className="text-3xl font-semibold text-gray-800 mb-6">Get news and updates from Meta</h2>
 
-   <Link
+      {/* FOOTER CTA */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">
+            Get news and updates from Meta
+          </h2>
+
+          <Link
             to="/support"
             className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-300 hover:shadow-xl"
           >
             Learn More
           </Link>
-    <p className="text-sm text-gray-600 mt-6">
-      By signing up you agree to receive updates and marketing messages (e.g. email, social, etc.)
-      from Meta about Meta’s existing and future products and services.
-    </p>
 
-    <p className="text-sm text-gray-600 mt-2">
-      You may withdraw your consent and unsubscribe at any time by clicking the unsubscribe link
-      included in our messages.
-    </p>
-    </div>
-</section>
+          <p className="text-sm text-gray-600 mt-6">
+            By signing up you agree to receive updates and marketing messages (e.g. email, social, etc.)
+            from Meta about Meta’s existing and future products and services.
+          </p>
+          <p className="text-sm text-gray-600 mt-2">
+            You may withdraw your consent and unsubscribe at any time by clicking the unsubscribe link
+            included in our messages.
+          </p>
+        </div>
+      </section>
     </>
   );
 }

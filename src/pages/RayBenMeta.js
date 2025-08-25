@@ -1,6 +1,6 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 export default function RayBanMetaGallery() {
   const products = [
     {
@@ -30,20 +30,20 @@ export default function RayBanMetaGallery() {
     {
       name: "Ray-Ban Meta Skyler",
       description: "Angular glases thin",
-      img: "https://scontent.flhe2-4.fna.fbcdn.net/v/t39.8562-6/483941065_524321510705626_4389566863479534043_n.webp?_nc_cat=110&ccb=1-7&_nc_sid=9a942e&_nc_ohc=_CIUjeV3FsQQ7kNvwFo9wj1&_nc_oc=AdmWsFrRGhyf8uoCDcWighSJ-D6n89BeLC7M0_2QDptyGoLgMEwF_2TR89iPy80bloE&_nc_zt=14&_nc_ht=scontent.flhe2-4.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfUAcbV5RDJ0SZVwvJsFOU3ZKt-iRXhkGOmjxBG4u4lKew&oe=68ACFB1D"  
+      img: "https://scontent.flhe2-4.fna.fbcdn.net/v/t39.8562-6/483941065_524321510705626_4389566863479534043_n.webp?_nc_cat=110&ccb=1-7&_nc_sid=9a942e&_nc_ohc=_CIUjeV3FsQQ7kNvwFo9wj1&_nc_oc=AdmWsFrRGhyf8uoCDcWighSJ-D6n89BeLC7M0_2QDptyGoLgMEwF_2TR89iPy80bloE&_nc_zt=14&_nc_ht=scontent.flhe2-4.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfUAcbV5RDJ0SZVwvJsFOU3ZKt-iRXhkGOmjxBG4u4lKew&oe=68ACFB1D"
     },
     {
-              name: "Ray-Ban Wayfarer",
+      name: "Ray-Ban Wayfarer",
       description: "Smart glasses black color",
       img: "https://scontent.flhe2-4.fna.fbcdn.net/v/t39.8562-6/483902215_1337152070946946_937716411975899546_n.webp?_nc_cat=111&ccb=1-7&_nc_sid=9a942e&_nc_ohc=pq7GuoRxAFsQ7kNvwFPLbnw&_nc_oc=AdnfY-hLD1pjvv3iVUtQhX6fvdSvH0_3Aqn354Dlbpm7Y058HpuqtIo9qQ0SaTgFMnw&_nc_zt=14&_nc_ht=scontent.flhe2-4.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfVp5CC6C_kHxokqWr-GPp2XcybwBdRkk0cQ_1yF3yLt9w&oe=68AD0881"
     },
     {
-              name: "Ray-Ban Meta Skyler",
+      name: "Ray-Ban Meta Skyler",
       description: "Pashtoon ai glasses",
       img: "https://scontent.flhe2-4.fna.fbcdn.net/v/t39.8562-6/484036527_2273432283058231_179598348016296573_n.webp?_nc_cat=110&ccb=1-7&_nc_sid=9a942e&_nc_ohc=7sMSr6cVbc0Q7kNvwFEAHk6&_nc_oc=Adl8uCZrhGSXklBiqK2qdpfiiKruOz7afI8S1u0sldnLsYmVgTLWTef1p3Xw7En5VOc&_nc_zt=14&_nc_ht=scontent.flhe2-4.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfXPtw2R1nJerDcFYRPaYbTHgEEqgJHQLhhOMUuix7hzSw&oe=68ACEB12"
     },
     {
-          name: "Ray-Ban Meta Skyler",
+      name: "Ray-Ban Meta Skyler",
       description: "Meta special ray ben",
       img: "https://scontent.flhe2-2.fna.fbcdn.net/v/t39.8562-6/482031480_2764432320394081_7420328633235150300_n.webp?_nc_cat=101&ccb=1-7&_nc_sid=9a942e&_nc_ohc=Sa75rQVzHikQ7kNvwFh-g7w&_nc_oc=Adn5KbQeKyRMW0Gt-iSmT8HQ8hJzoRJtRTDlJTIBSnFZIppu4UkKE-Deg9MMeQSmUec&_nc_zt=14&_nc_ht=scontent.flhe2-2.fna&_nc_gid=w0PmDlCKKgVUeh1aNVA4CA&oh=00_AfXZSnLI8pGW9IFZ3vG7XtJaHtAOQ4kuSPpOpC5kuhcgzw&oe=68ACF1BA"
     }
@@ -53,23 +53,26 @@ export default function RayBanMetaGallery() {
 
   return (
     <>
-      <section className="">
-          <div className="py-[100px] bg-gray-100 pb-[200px]">
-                <h1 className="text-5xl text-center ">Find the right pair of <br/>AI glasses for you</h1>
-            <p className="text-center text-2xl mt-4">Discover AI glasses that blend cutting-edge technology with iconic style.</p>
-            </div>
+      <section>
+        <div className="py-16 sm:py-24 bg-gray-100 text-center px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Find the right pair of <br className="hidden sm:block"/> AI glasses for you
+          </h1>
+          <p className="text-base sm:text-lg md:text-2xl mt-4">
+            Discover AI glasses that blend cutting-edge technology with iconic style.
+          </p>
+        </div>
 
-           
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {products.map((p) => (
-            <div key={p.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4 sm:px-8 md:px-12">
+          {products.map((p, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
               <img src={p.img} alt={p.name} className="w-full h-48 object-cover" />
               <div className="p-4 text-center">
-                <h2 className="text-lg font-semibold">{p.name}</h2>
+                <h2 className="text-base sm:text-lg font-semibold">{p.name}</h2>
                 <p className="text-gray-600 mt-2 text-sm">{p.description}</p>
                 <button
                   onClick={() => setSelected(p)}
-                  className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+                  className="mt-4 w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
                 >
                   Try
                 </button>
@@ -80,7 +83,7 @@ export default function RayBanMetaGallery() {
       </section>
 
       {selected && (
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 px-4">
           <div className="bg-white rounded-2xl p-6 max-w-xl w-full relative">
             <button
               onClick={() => setSelected(null)}
@@ -89,7 +92,7 @@ export default function RayBanMetaGallery() {
               ✕
             </button>
             <img src={selected.img} alt={selected.name} className="w-full h-64 object-cover rounded" />
-            <h3 className="text-2xl font-semibold mt-4">{selected.name}</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold mt-4">{selected.name}</h3>
             <p className="text-gray-700 mt-2">{selected.description}</p>
             <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
               Add to Cart
@@ -97,28 +100,29 @@ export default function RayBanMetaGallery() {
           </div>
         </div>
       )}
-      <section className="py-16 bg-gray-50">
-  <div className="max-w-3xl mx-auto px-6 text-center">
-    <h2 className="text-3xl font-semibold text-gray-800 mb-6">Get news and updates from Meta</h2>
 
-   <Link
+      <section className="py-12 sm:py-16 bg-gray-50 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">Get news and updates from Meta</h2>
+
+          <Link
             to="/support"
-            className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-300 hover:shadow-xl"
+            className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-300 hover:shadow-xl"
           >
             Learn More
           </Link>
 
-    <p className="text-sm text-gray-600 mt-6">
-      By signing up you agree to receive updates and marketing messages (e.g. email, social, etc.)
-      from Meta about Meta’s existing and future products and services.
-    </p>
+          <p className="text-xs sm:text-sm text-gray-600 mt-6">
+            By signing up you agree to receive updates and marketing messages (e.g. email, social, etc.)
+            from Meta about Meta’s existing and future products and services.
+          </p>
 
-    <p className="text-sm text-gray-600 mt-2">
-      You may withdraw your consent and unsubscribe at any time by clicking the unsubscribe link
-      included in our messages.
-    </p>
-    </div>
-</section>
+          <p className="text-xs sm:text-sm text-gray-600 mt-2">
+            You may withdraw your consent and unsubscribe at any time by clicking the unsubscribe link
+            included in our messages.
+          </p>
+        </div>
+      </section>
     </>
   );
 }

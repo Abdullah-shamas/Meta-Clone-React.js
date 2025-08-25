@@ -5,7 +5,7 @@ export default function Support() {
   return (
     <section className="min-h-screen bg-gray-50 text-gray-800">
       
-      <div className="bg-blue-500 text-black py-[250px] px-6 text-center">
+      <div className="bg-gray-100 text-black py-[250px] px-6 text-center">
         <h1 className="text-4xl font-bold mb-4">Support Center</h1>
         <p className="text-lg max-w-2xl mx-auto">
           We’re here to help you with any issues, questions, or feedback. 
