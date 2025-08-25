@@ -7,10 +7,11 @@ export default function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const [questdropdown, setQuestdropdown] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileGlasses, setMobileGlasses] = useState(false);
+  const [mobileQuest, setMobileQuest] = useState(false);
 
   return (
     <nav className="bg-gray-300 py-4 px-6 relative">
-     
       <div className="flex items-center justify-between">
         
         <Link to="/" className="flex items-center font-bold text-lg">
@@ -20,14 +21,13 @@ export default function Navbar() {
 
        
         <div className="hidden md:flex items-center gap-10">
-         
+          
           <div
             className="relative"
             onMouseEnter={() => setDropdown(true)}
             onMouseLeave={() => setDropdown(false)}
           >
             <button className="text-lg">AI Glasses</button>
-
             {dropdown && (
               <div className="absolute left-0 top-full bg-gray-300 shadow-md flex p-6 z-50 whitespace-nowrap">
                 <div className="mr-16">
@@ -36,43 +36,23 @@ export default function Navbar() {
                     About AI Glasses
                   </Link>
                   <Link to="Ai-glasses/2" className="block py-1">
-                    Ray Ben Meta
+                    Ray Ban Meta
                   </Link>
                   <Link to="Ai-glasses/3" className="block py-1">
-                    Okelay Meta
+                    Oakley Meta
                   </Link>
-                </div>
-
-                <div className="flex gap-6">
-                  <div className="text-center">
-                    <img
-                      src="https://tse2.mm.bing.net/th/id/OIP.bPuxQvRm_bP0NYnoYml2lAAAAA?w=400&h=200&rs=1&pid=ImgDetMain&o=7&rm=3"
-                      alt="Ray-Ban Meta"
-                      className="w-48 h-auto object-cover rounded-lg"
-                    />
-                    <p className="mt-2 font-medium text-sm">Shop Wayfarer</p>
-                  </div>
-                  <div className="text-center">
-                    <img
-                      src="https://tse3.mm.bing.net/th/id/OIP.gcUJBGPS393iEJeKHA_OkAHaE_?w=640&h=432&rs=1&pid=ImgDetMain&o=7&rm=3"
-                      alt="Oakley Meta"
-                      className="w-48 h-auto object-cover rounded-lg"
-                    />
-                    <p className="mt-2 font-medium text-sm">Shop HSTN</p>
-                  </div>
                 </div>
               </div>
             )}
           </div>
 
-         
+          
           <div
             className="relative"
             onMouseEnter={() => setQuestdropdown(true)}
             onMouseLeave={() => setQuestdropdown(false)}
           >
             <button className="text-lg">Meta Quest</button>
-
             {questdropdown && (
               <div className="absolute left-0 top-full bg-gray-300 shadow-md flex p-6 z-50 whitespace-nowrap">
                 <div className="mr-16 text-lg">
@@ -89,29 +69,10 @@ export default function Navbar() {
                     </li>
                     <li>
                       <Link to="Metaquest/3" className="block py-1">
-                        Meta Quest 3s
+                        Meta Quest 3S
                       </Link>
                     </li>
                   </ul>
-                </div>
-
-                <div className="flex gap-6">
-                  <div className="text-center">
-                    <img
-                      src="https://www.bing.com/th/id/OIP.2SXwxQE6dgxLMibRA6t_rwHaF7?w=205&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                      alt="Ray-Ban Meta"
-                      className="w-48 h-auto object-cover rounded-lg"
-                    />
-                    <p className="mt-2 font-medium text-sm">Shop Wayfarer</p>
-                  </div>
-                  <div className="text-center">
-                    <img
-                      src="https://www.bing.com/th/id/OIP.E2KzLGz3OADm2F2ssWuOOwHaE8?w=292&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                      alt="Oakley Meta"
-                      className="w-48 h-auto object-cover rounded-lg"
-                    />
-                    <p className="mt-2 font-medium text-sm">Shop HSTN</p>
-                  </div>
                 </div>
               </div>
             )}
@@ -139,7 +100,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        
+       
         <button
           className="md:hidden text-xl"
           onClick={() => setMobileMenu(!mobileMenu)}
@@ -150,9 +111,41 @@ export default function Navbar() {
 
       
       {mobileMenu && (
-        <div className="flex flex-col gap-4 mt-4 md:hidden">
-          <Link to="Ai-glasses/1">AI Glasses</Link>
-          <Link to="Metaquest">Meta Quest</Link>
+        <div className="flex flex-col gap-3 mt-4 md:hidden">
+          
+          <div>
+            <button
+              className="w-full text-left font-semibold"
+              onClick={() => setMobileGlasses(!mobileGlasses)}
+            >
+              AI Glasses {mobileGlasses ? "▲" : "▼"}
+            </button>
+            {mobileGlasses && (
+              <div className="ml-4 mt-2 flex flex-col gap-2 text-sm">
+                <Link to="Ai-glasses/1">About AI Glasses</Link>
+                <Link to="Ai-glasses/2">Ray Ban Meta</Link>
+                <Link to="Ai-glasses/3">Oakley Meta</Link>
+              </div>
+            )}
+          </div>
+
+          
+          <div>
+            <button
+              className="w-full text-left font-semibold"
+              onClick={() => setMobileQuest(!mobileQuest)}
+            >
+              Meta Quest {mobileQuest ? "▲" : "▼"}
+            </button>
+            {mobileQuest && (
+              <div className="ml-4 mt-2 flex flex-col gap-2 text-sm">
+                <Link to="Metaquest">Meta Quest Overview</Link>
+                <Link to="Metaquest/2">Meta Quest 2S</Link>
+                <Link to="Metaquest/3">Meta Quest 3S</Link>
+              </div>
+            )}
+          </div>
+
           <Link to="/support">Support</Link>
           <Link
             to="/login"

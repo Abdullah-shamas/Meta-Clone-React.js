@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Aiglasses() {
   return (
     <>
-      {/* Hero Section */}
+      
       <section className="relative w-full">
         <img
           className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover transition-transform duration-700 hover:scale-105"
@@ -21,7 +21,7 @@ export default function Aiglasses() {
         </div>
       </section>
 
-      {/* Style Section */}
+      
       <section className="py-12 px-4">
         <h1 className="text-2xl sm:text-3xl md:text-5xl text-center mt-12 font-bold">
           Style that fits you. Tech that gets you.
@@ -68,7 +68,7 @@ export default function Aiglasses() {
         </div>
       </section>
 
-      {/* Features Section */}
+     
       <section className="py-12 px-4">
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-[40px] sm:mb-[60px]">
           You are in control of your experience
@@ -120,7 +120,7 @@ export default function Aiglasses() {
         </div>
       </section>
 
-      {/* Newsletter Section */}
+     
       <section className="py-16 bg-gray-50 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-6">

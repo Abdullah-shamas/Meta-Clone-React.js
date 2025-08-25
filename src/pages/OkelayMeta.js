@@ -56,7 +56,7 @@ export default function OkelayMeta() {
 
   return (
     <>
-      {/* HERO SECTION */}
+      
       <section className="bg-gray-100 py-20 sm:py-24">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-12 sm:gap-32">
           <div className="flex flex-col items-center transform transition-transform duration-500 hover:scale-110 hover:-translate-y-2">
@@ -71,7 +71,7 @@ export default function OkelayMeta() {
         </div>
       </section>
 
-      {/* PRODUCT GRID */}
+      
       <section className="py-16 sm:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
           {products.map((p, index) => (
@@ -95,7 +95,7 @@ export default function OkelayMeta() {
         </div>
       </section>
 
-      {/* MODAL */}
+      
       {selected && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl p-6 max-w-xl w-full relative">
@@ -115,7 +115,7 @@ export default function OkelayMeta() {
         </div>
       )}
 
-      {/* FOOTER CTA */}
+      
       <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">

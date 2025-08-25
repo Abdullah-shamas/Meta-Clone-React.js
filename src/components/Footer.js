@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-gray-200 text-black py-10 border-t border-gray-300">
       <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
-        {/* Logo & About */}
+        
         <div>
           <div className="flex items-center font-bold text-xl">
             <FaMeta className="text-blue-600 mr-2" />
@@ -17,7 +17,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* AI Glasses */}
+        
         <div>
           <h3 className="font-semibold mb-3 text-lg">AI Glasses</h3>
           <ul className="text-sm space-y-2">
@@ -27,7 +27,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Meta Quest */}
+        
         <div>
           <h3 className="font-semibold mb-3 text-lg">Meta Quest</h3>
           <ul className="text-sm space-y-2">
@@ -37,7 +37,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
+        
         <div>
           <h3 className="font-semibold mb-3 text-lg">Contact</h3>
           <p className="text-sm">
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Note */}
+      
       <div className="text-center text-xs text-gray-600 mt-10">
         &copy; {new Date().getFullYear()} Meta Technologies. All rights reserved.
       </div>
